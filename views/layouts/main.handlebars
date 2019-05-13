@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Delicious Burgers</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/burger_style.css">
+
+  </head>
+  <body>
+    <div class="container-fluid">
+    <center>
+      <div class="row">
+      <img src="assets/img/Krabbypatty.png" alt="">
+    <div class="jumbotron">
+    <h1>Delicious Burgers!</h1>      
+    <p>Select a burger of your choice from the list. <br> 
+   If you don't see anything you like on the list, you can use the search bar below to find a burger.
+</p>    
+    </center>
+    <br>
+      {{{body}}}
+      <br><br>
+      <form action="burger/create" method="POST"> 
+        <div class="row">
+          <div class="col-md-3"></div> 
+          <div class="form-group col-md-6">
+            <center><label for="new_burger" class="submitFont">Find a burger</label></center>
+            <textarea class="form-control" type="text" columns="6" rows="2" id="new_burger required value="" name="burger_name"></textarea>
+          </div>
+          <div class="col-md-3"></div> 
+        </div>
+        <center>
+          <button id="submit-button" type="submit" class="btn btn-danger">Eat This!</button>
+        </center>
+      </form>
+      <br>
+    </div>
+  </body>
+</html> 
